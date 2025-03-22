@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetodologiasDeProgramacion.Interfaces
 {
-    // Ejercicio N1 - Practica N1
+    // Ejercicio N°1 - Practica N°1
     internal interface Comparable
     {
         bool sosIgual(Comparable c);
