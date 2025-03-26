@@ -13,6 +13,6 @@ namespace MetodologiasDeProgramacion.Interfaces
         Comparable minimo();
         Comparable maximo();
         void agregar(Comparable c);
-        void contiene(Comparable c);
+        bool contiene(Comparable c);
     }
 }
