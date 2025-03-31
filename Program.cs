@@ -17,8 +17,28 @@ public class Program
         Random random = new Random();
         for (int contador = 1; contador < 21; contador++)
         {
-            Comparable numero = new Numero(random.Next(1, 100000));
+            Comparable numero = new Numero(random.Next(1, 100));
             c.agregar(numero);
+        }
+    }
+
+    // Ejericio N°6 - Practica N°1
+    public void informar(Coleccionable c)
+    {
+        Console.WriteLine(c.cuantos);
+        Console.WriteLine(c.minimo);
+        Console.WriteLine(c.maximo);
+        Console.WriteLine("Ingrese un numero para determinar si esta en la lista: ");
+        int valorIngresado = int.Parse(Console.ReadLine());
+        Comparable numero = new Numero(valorIngresado);
+
+        if (c.contiene(numero))
+        {
+            Console.WriteLine("Contiene el elemento ingresado");
+        }
+        else
+        {
+            Console.WriteLine("No contiene el elemento ingresado");
         }
     }
 }
