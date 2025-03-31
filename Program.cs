@@ -9,10 +9,19 @@ public class Program
 {
     static void Main(string[] args)
     {
+        // Ejercicio N°7 - Practica N°1
+        Pila pila = new Pila();
+        Cola cola = new Cola();
+
+        llenar(pila);
+        llenar(cola);
+
+        informar(pila);
+        informar(cola);
         // codigo programa
     }
 
-    public void llenar(Coleccionable c)
+    public static void llenar(Coleccionable c)
     {
         Random random = new Random();
         for (int contador = 1; contador < 21; contador++)
@@ -23,7 +32,7 @@ public class Program
     }
 
     // Ejericio N°6 - Practica N°1
-    public void informar(Coleccionable c)
+    public static void informar(Coleccionable c)
     {
         Console.WriteLine(c.cuantos);
         Console.WriteLine(c.minimo);
