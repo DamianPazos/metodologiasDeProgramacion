@@ -53,6 +53,23 @@ public class Program
             Console.WriteLine("No contiene el elemento ingresado");
         }
     }
+
+    // Ejercicio N°13 - Practica N°1
+    public void llenarAlumnos(Coleccionable c)
+    {
+        // Extra para nombres al azar
+        string[] listaNombres = { "Juan", "María", "Carlos", "Laura", "Pedro", "Sofía", "Fernando", "Ana", "Diego", "Marta", "Luis", "Elena", "Ricardo", "Gabriela", "Miguel", "Patricia", "Javier", "Isabel", "Roberto", "Silvia", "Daniel", "Victoria", "Alejandro", "Cristina", "Héctor", "Julia", "Eduardo", "Sara", "Pablo", "Beatriz", "Alberto", "Cecilia", "Raúl", "Lorena", "Francisco", "Natalia", "Andrés", "Verónica", "Emilio", "Adriana", "Gustavo", "Liliana", "Oscar", "Mercedes", "Iván", "Paula", "Manuel", "Esther", "Jesús", "Camila" };
+        Random nombreRandom = new Random();
+        Random dniRandom = new Random();
+        Random legajoRandom = new Random();
+        Random promedioRandom = new Random();
+
+        for (int contador = 1;contador < 21; contador++)
+        {
+            Comparable alumno = new Alumno(listaNombres[nombreRandom.Next(listaNombres.Length)], dniRandom.Next(10000, 50000), legajoRandom.Next(1000, 9999), promedioRandom.Next(1, 11));
+            c.agregar(alumno);
+        }
+    }
 }
 
 
