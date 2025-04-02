@@ -17,6 +17,11 @@ namespace MetodologiasDeProgramacion.Clases
             this.valor = valor;
         }
 
+        public int getValor()
+        {
+            return valor;
+        }
+
         public bool sosIgual(Comparable c)
         {
             return this.valor == ((Numero)c).valor;
