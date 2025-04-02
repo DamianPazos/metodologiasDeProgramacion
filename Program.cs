@@ -11,15 +11,18 @@ public class Program
     {
         // Ejercicio N°7 - Practica N°1
         // Ejercicio N°9 - Practica N°1
+        // Ejericicio N°14 - Practica N°1
         Pila pila = new Pila();
         Cola cola = new Cola();
         ColeecionMultiple multiple = new ColeecionMultiple(pila, cola);
 
-        llenar(pila);
-        llenar(cola);
+        llenarAlumnos(pila);
+        llenarAlumnos(cola);
+        //llenar(pila);
+        //llenar(cola);
 
-        informar(pila);
-        informar(cola);
+        //informar(pila);
+        //informar(cola);
         informar(multiple);
         // codigo programa
     }
@@ -55,7 +58,7 @@ public class Program
     }
 
     // Ejercicio N°13 - Practica N°1
-    public void llenarAlumnos(Coleccionable c)
+    public static void llenarAlumnos(Coleccionable c)
     {
         // Extra para nombres al azar
         string[] listaNombres = { "Juan", "María", "Carlos", "Laura", "Pedro", "Sofía", "Fernando", "Ana", "Diego", "Marta", "Luis", "Elena", "Ricardo", "Gabriela", "Miguel", "Patricia", "Javier", "Isabel", "Roberto", "Silvia", "Daniel", "Victoria", "Alejandro", "Cristina", "Héctor", "Julia", "Eduardo", "Sara", "Pablo", "Beatriz", "Alberto", "Cecilia", "Raúl", "Lorena", "Francisco", "Natalia", "Andrés", "Verónica", "Emilio", "Adriana", "Gustavo", "Liliana", "Oscar", "Mercedes", "Iván", "Paula", "Manuel", "Esther", "Jesús", "Camila" };
