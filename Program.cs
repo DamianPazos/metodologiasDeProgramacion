@@ -10,14 +10,17 @@ public class Program
     static void Main(string[] args)
     {
         // Ejercicio N°7 - Practica N°1
+        // Ejercicio N°9 - Practica N°1
         Pila pila = new Pila();
         Cola cola = new Cola();
+        ColeecionMultiple multiple = new ColeecionMultiple(pila, cola);
 
         llenar(pila);
         llenar(cola);
 
         informar(pila);
         informar(cola);
+        informar(multiple);
         // codigo programa
     }
 
